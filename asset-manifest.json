@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/goit-react-hw-05-movies/static/css/main.7acaea2f.css",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.df9cbbf4.js",
+    "static/media/troll-advice_43866985_orig_.jpg": "/goit-react-hw-05-movies/static/media/troll-advice_43866985_orig_.8b961bbacc6bf17ffb69.jpg",
+    "index.html": "/goit-react-hw-05-movies/index.html",
+    "main.7acaea2f.css.map": "/goit-react-hw-05-movies/static/css/main.7acaea2f.css.map",
+    "main.df9cbbf4.js.map": "/goit-react-hw-05-movies/static/js/main.df9cbbf4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.df9cbbf4.js"
+  ]
+}
