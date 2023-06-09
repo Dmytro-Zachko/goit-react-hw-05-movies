@@ -10,7 +10,8 @@ export const MovieDetails = () => {
 
   useEffect(() => {
     try {
-      FilmDetailsById(movieId).then(response => {
+      FilmDetailsById(movieId)
+        .then(response => {
         setMovieInfo(response);
       });
     } catch (error) {
@@ -37,10 +38,7 @@ export const MovieDetails = () => {
                 {title}
                 {release_date && (
                   <span
-                    style={{
-                      padding: '0px 10px',
-                      color: '#a01d1d',
-                    }}
+                    
                   >
                     {release_date.slice(0,4)}
                   </span>

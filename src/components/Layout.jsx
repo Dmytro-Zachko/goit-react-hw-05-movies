@@ -10,7 +10,9 @@ export const Layout = () => {
       <NavLink to={"/movies"}>Movies</NavLink>
         </nav>
         </header>
-            <main><Outlet /></main>
+            <main><Suspense fallback={<div>Loading...</div>}>
+          <Outlet />
+        </Suspense></main>
             </div>
     )
 }
