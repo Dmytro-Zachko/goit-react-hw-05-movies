@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { toast } from 'react-toastify';
 import PropTypes from 'prop-types';
-import { SearchBar, SearchBarButton,SearchBarForm,SearchBarInput } from "./SearchForm.styled";
-import { MdImageSearch } from 'react-icons/md';
+import { SearchBarButton,SearchBarForm,SearchBarInput } from "./SearchForm.styled";
+
 
 export const SearchForm = ({onSubmit}) =>  {
  const [inputValue, setInputValue] = useState('');
