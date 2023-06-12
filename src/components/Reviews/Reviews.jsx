@@ -7,13 +7,16 @@ export const Reviews = () => {
     const { movieId } = useParams()
     
     useEffect(() => {
-        FilmReviewsByID(movieId)
+        try {
+            FilmReviewsByID(movieId)
         .then(responce => setreviewsInfo(responce.results))
+        } catch (error) {
+         console.log(error)   
+        }
     }, [movieId])
     
     return (
    <>
-    <div>Ярік Підор</div>
             {!reviewsInfo.length ?
                 (<p>We dont have any reviews for this movie</p>)
                 : (
@@ -30,3 +33,5 @@ export const Reviews = () => {
     </>
          )
 }
+
+export default Reviews

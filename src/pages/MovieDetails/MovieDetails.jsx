@@ -2,7 +2,7 @@ import { useParams,useLocation,Link,Outlet } from "react-router-dom";
 import { useState, useEffect,useRef, Suspense } from "react";
 import { FilmDetailsById } from "services/FetchMovies";
 
-export const MovieDetails = () => {
+ const MovieDetails = () => {
     const [movieInfo, setMovieInfo] = useState({});
   const { movieId } = useParams();
   const location = useLocation();
@@ -24,7 +24,8 @@ export const MovieDetails = () => {
     
 
     return (
-    <>
+      <>
+        <Link to={goBackHref.current}>Go back</Link>
       {movieInfo !== {} && (
         <>
             <img
@@ -35,10 +36,8 @@ export const MovieDetails = () => {
 
             <div>
               <h1>
-                {title}
-                {release_date && (
+                {title} {release_date && (
                   <span
-                    
                   >
                     {release_date.slice(0,4)}
                   </span>
@@ -76,7 +75,8 @@ export const MovieDetails = () => {
         </>
       )}
 
-      <Link to={goBackHref.current}>Go back</Link>
     </>
   );  
 }
+
+export default MovieDetails

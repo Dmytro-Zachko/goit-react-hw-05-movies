@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { FilmCreditsByID } from "services/FetchMovies";
 import memImage from './troll-advice_43866985_orig_.jpg'
 
-export const Cast = () => {
+ const Cast = () => {
     const [castInfo, setcastInfo] = useState([])
     const { movieId } = useParams()
     
@@ -42,12 +42,4 @@ export const Cast = () => {
     )
 }
 
-/* <ul>
-                    {castInfo.map(({id, profile_path, original_name, character}) => {
-                        <li key={id}>
-                         <img src={ `https://image.tmdb.org/t/p/w500/${profile_path}`} alt={original_name} />
-                     <p> {original_name} </p>
-                      <p>Character:  {character} </p>  
-                        </li>   
-                    })}
-                </ul>  */
+export default Cast

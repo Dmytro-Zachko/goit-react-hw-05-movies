@@ -10,7 +10,7 @@ export const TrendingsFilms = async () => {
 }
 
 export const FilmByName = async name => {
-    const BASE_URL = 'https://api.themoviedb.org/3/search/movie/';
+    const BASE_URL = 'https://api.themoviedb.org/3/search/movie';
     const responce = await axios.get(`${BASE_URL}?query=${name}&api_key=${API_KEY}&page=1`)
 
     return responce.data
